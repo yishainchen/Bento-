@@ -15,18 +15,7 @@
 		84BD07D21B870A8000AA8FC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84BD07D01B870A8000AA8FC3 /* Main.storyboard */; };
 		84BD07D41B870A8000AA8FC3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84BD07D31B870A8000AA8FC3 /* Images.xcassets */; };
 		84BD07D71B870A8000AA8FC3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84BD07D51B870A8000AA8FC3 /* LaunchScreen.xib */; };
-		84BD07E31B870A8100AA8FC3 /* Bento__Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BD07E21B870A8100AA8FC3 /* Bento__Tests.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		84BD07DD1B870A8100AA8FC3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 84BD07B81B870A8000AA8FC3 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 84BD07BF1B870A8000AA8FC3;
-			remoteInfo = "Bento++";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		3E1299FB338D68C93E1D8631 /* Pods-Bento++.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bento++.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bento++/Pods-Bento++.release.xcconfig"; sourceTree = "<group>"; };
@@ -43,7 +32,6 @@
 		84BD07D11B870A8000AA8FC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84BD07D31B870A8000AA8FC3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		84BD07D61B870A8000AA8FC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		84BD07DC1B870A8100AA8FC3 /* Bento++Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bento++Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84BD07E11B870A8100AA8FC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84BD07E21B870A8100AA8FC3 /* Bento__Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Bento__Tests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -54,13 +42,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6336B03733005CD843A24ABC /* libPods-Bento++.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		84BD07D91B870A8100AA8FC3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,7 +72,6 @@
 			isa = PBXGroup;
 			children = (
 				84BD07C01B870A8000AA8FC3 /* Bento++.app */,
-				84BD07DC1B870A8100AA8FC3 /* Bento++Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -168,24 +148,6 @@
 			productReference = 84BD07C01B870A8000AA8FC3 /* Bento++.app */;
 			productType = "com.apple.product-type.application";
 		};
-		84BD07DB1B870A8100AA8FC3 /* Bento++Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 84BD07E91B870A8100AA8FC3 /* Build configuration list for PBXNativeTarget "Bento++Tests" */;
-			buildPhases = (
-				84BD07D81B870A8100AA8FC3 /* Sources */,
-				84BD07D91B870A8100AA8FC3 /* Frameworks */,
-				84BD07DA1B870A8100AA8FC3 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				84BD07DE1B870A8100AA8FC3 /* PBXTargetDependency */,
-			);
-			name = "Bento++Tests";
-			productName = "Bento++Tests";
-			productReference = 84BD07DC1B870A8100AA8FC3 /* Bento++Tests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -197,10 +159,6 @@
 				TargetAttributes = {
 					84BD07BF1B870A8000AA8FC3 = {
 						CreatedOnToolsVersion = 6.4;
-					};
-					84BD07DB1B870A8100AA8FC3 = {
-						CreatedOnToolsVersion = 6.4;
-						TestTargetID = 84BD07BF1B870A8000AA8FC3;
 					};
 				};
 			};
@@ -218,7 +176,6 @@
 			projectRoot = "";
 			targets = (
 				84BD07BF1B870A8000AA8FC3 /* Bento++ */,
-				84BD07DB1B870A8100AA8FC3 /* Bento++Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -231,13 +188,6 @@
 				84BD07D21B870A8000AA8FC3 /* Main.storyboard in Resources */,
 				84BD07D71B870A8000AA8FC3 /* LaunchScreen.xib in Resources */,
 				84BD07D41B870A8000AA8FC3 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		84BD07DA1B870A8100AA8FC3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,23 +238,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		84BD07D81B870A8100AA8FC3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				84BD07E31B870A8100AA8FC3 /* Bento__Tests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		84BD07DE1B870A8100AA8FC3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 84BD07BF1B870A8000AA8FC3 /* Bento++ */;
-			targetProxy = 84BD07DD1B870A8100AA8FC3 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		84BD07D01B870A8000AA8FC3 /* Main.storyboard */ = {
@@ -362,7 +296,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -400,7 +334,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -414,6 +348,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Bento++/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -425,42 +360,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Bento++/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		84BD07EA1B870A8100AA8FC3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "Bento++Tests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bento++.app/Bento++";
-			};
-			name = Debug;
-		};
-		84BD07EB1B870A8100AA8FC3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "Bento++Tests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bento++.app/Bento++";
 			};
 			name = Release;
 		};
@@ -481,15 +383,6 @@
 			buildConfigurations = (
 				84BD07E71B870A8100AA8FC3 /* Debug */,
 				84BD07E81B870A8100AA8FC3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		84BD07E91B870A8100AA8FC3 /* Build configuration list for PBXNativeTarget "Bento++Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				84BD07EA1B870A8100AA8FC3 /* Debug */,
-				84BD07EB1B870A8100AA8FC3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
