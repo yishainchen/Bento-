@@ -26,9 +26,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    FBSDKLoginButton *loginButton = [[FBSDKLoginButton alloc] init];
-    loginButton.center = self.view.center;
-    [self.view addSubview:loginButton];
+    
+  
     // Do any additional setup after loading the view.
     
     [FBSDKProfile enableUpdatesOnAccessTokenChange:YES];
@@ -36,6 +35,23 @@
     // Do any additional setup after loading the view.
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(fbTokenChangeNoti:) name:FBSDKAccessTokenDidChangeNotification object:nil];
 }
+
+- (IBAction)fbLoginButtonDidPressed:(UIButton *)sender {
+    NSLog(@"### FB Login Button Did Pressed ###");
+    FBSDKLoginManager *login = [[FBSDKLoginManager alloc] init];
+    [login logInWithReadPermissions:@[@"email"] handler:^(FBSDKLoginManagerLoginResult *result, NSError *error) {
+        if (error) {
+            // Process error
+        } else if (result.isCancelled) {
+            // Handle cancellations
+        } else {
+            if ([result.grantedPermissions containsObject:@"email"]) {
+
+            }
+        }
+    }];
+}
+
 
 -(void)fbTokenChangeNoti:(NSNotification*)noti {
     if ([FBSDKAccessToken currentAccessToken]) {
