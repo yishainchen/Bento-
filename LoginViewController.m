@@ -26,13 +26,21 @@
     [FBSDKProfile enableUpdatesOnAccessTokenChange:YES];
     [FBSDKProfile currentProfile];
     // Do any additional setup after loading the view.
+     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(fbTokenChangeNoti:) name:FBSDKAccessTokenDidChangeNotification object:nil];
 }
 
+-(void)fbTokenChangeNoti:(NSNotification*)noti {
+    if ([FBSDKAccessToken currentAccessToken]) {
+        ViewController *VC = [self.storyboard instantiateViewControllerWithIdentifier:@"Cell"];
+        [self presentViewController:VC animated:YES completion:nil];
+    }
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
+-(void)
 /*
 #pragma mark - Navigation
 
