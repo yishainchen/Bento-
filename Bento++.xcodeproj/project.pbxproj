@@ -17,7 +17,7 @@
 		84BD07D41B870A8000AA8FC3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84BD07D31B870A8000AA8FC3 /* Images.xcassets */; };
 		84BD07D71B870A8000AA8FC3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84BD07D51B870A8000AA8FC3 /* LaunchScreen.xib */; };
 		84BD07E31B870A8100AA8FC3 /* Bento__Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BD07E21B870A8100AA8FC3 /* Bento__Tests.m */; };
-		84BD07EE1B871D4D00AA8FC3 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BD07ED1B871D4D00AA8FC3 /* LoginViewController.m */; };
+		A7DAE2D31B871E8000AD2156 /* Evan.m in Sources */ = {isa = PBXBuildFile; fileRef = A7DAE2D21B871E8000AD2156 /* Evan.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,8 +50,8 @@
 		84BD07DC1B870A8100AA8FC3 /* Bento++Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bento++Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84BD07E11B870A8100AA8FC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84BD07E21B870A8100AA8FC3 /* Bento__Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Bento__Tests.m; sourceTree = "<group>"; };
-		84BD07EC1B871D4C00AA8FC3 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
-		84BD07ED1B871D4D00AA8FC3 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		A7DAE2D11B871E8000AD2156 /* Evan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Evan.h; sourceTree = "<group>"; };
+		A7DAE2D21B871E8000AD2156 /* Evan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Evan.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +118,8 @@
 				84BD07D51B870A8000AA8FC3 /* LaunchScreen.xib */,
 				84BD07CA1B870A8000AA8FC3 /* Bento__.xcdatamodeld */,
 				84BD07C31B870A8000AA8FC3 /* Supporting Files */,
+				A7DAE2D11B871E8000AD2156 /* Evan.h */,
+				A7DAE2D21B871E8000AD2156 /* Evan.m */,
 			);
 			path = "Bento++";
 			sourceTree = "<group>";
@@ -292,6 +294,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				14F70F741B871C4E002FDEAE /* sean.m in Sources */,
+				A7DAE2D31B871E8000AD2156 /* Evan.m in Sources */,
 				84BD07C91B870A8000AA8FC3 /* AppDelegate.m in Sources */,
 				84BD07EE1B871D4D00AA8FC3 /* LoginViewController.m in Sources */,
 				84BD07C61B870A8000AA8FC3 /* main.m in Sources */,
