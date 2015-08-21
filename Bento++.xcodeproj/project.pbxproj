@@ -16,6 +16,7 @@
 		84BD07D41B870A8000AA8FC3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84BD07D31B870A8000AA8FC3 /* Images.xcassets */; };
 		84BD07D71B870A8000AA8FC3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84BD07D51B870A8000AA8FC3 /* LaunchScreen.xib */; };
 		84BD07E31B870A8100AA8FC3 /* Bento__Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BD07E21B870A8100AA8FC3 /* Bento__Tests.m */; };
+		84BD07F11B87334600AA8FC3 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BD07F01B87334600AA8FC3 /* LoginViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,8 @@
 		84BD07DC1B870A8100AA8FC3 /* Bento++Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bento++Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84BD07E11B870A8100AA8FC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84BD07E21B870A8100AA8FC3 /* Bento__Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Bento__Tests.m; sourceTree = "<group>"; };
+		84BD07EF1B87334600AA8FC3 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		84BD07F01B87334600AA8FC3 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +82,8 @@
 		84BD07B71B870A8000AA8FC3 = {
 			isa = PBXGroup;
 			children = (
+				84BD07EF1B87334600AA8FC3 /* LoginViewController.h */,
+				84BD07F01B87334600AA8FC3 /* LoginViewController.m */,
 				84BD07C21B870A8000AA8FC3 /* Bento++ */,
 				84BD07DF1B870A8100AA8FC3 /* Bento++Tests */,
 				84BD07C11B870A8000AA8FC3 /* Products */,
@@ -285,6 +290,7 @@
 				84BD07C61B870A8000AA8FC3 /* main.m in Sources */,
 				84BD07CF1B870A8000AA8FC3 /* ViewController.m in Sources */,
 				84BD07CC1B870A8000AA8FC3 /* Bento__.xcdatamodeld in Sources */,
+				84BD07F11B87334600AA8FC3 /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

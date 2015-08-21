@@ -18,6 +18,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    FBSDKLoginButton *loginButton = [[FBSDKLoginButton alloc] init];
+    loginButton.center = self.view.center;
+    [self.view addSubview:loginButton];
+    // Do any additional setup after loading the view.
+    
+    [FBSDKProfile enableUpdatesOnAccessTokenChange:YES];
+    [FBSDKProfile currentProfile];
     // Do any additional setup after loading the view.
 }
 
