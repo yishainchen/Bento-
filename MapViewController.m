@@ -14,13 +14,16 @@
 #import "MapViewController.h"
 
 @interface MapViewController ()  <GMSMapViewDelegate,CLLocationManagerDelegate, UITextFieldDelegate>
-
 {
     NSDictionary *dict;
     BOOL isFirstTime;
     GMSMapView *mapView;
     CLLocationManager *locationManager;
 }
+
+
+
+@property UIColor *colorGreen;
 @end
 
 @implementation MapViewController
@@ -47,6 +50,14 @@
     marker.map = mapView;
     [self.view addSubview:mapView];
     [self marker];
+    
+    //button
+    
+    _colorGreen = [UIColor colorWithRed:0.5f green:0.810561f blue:0.491887f alpha:1.0f];
+    _btnConfirm.enabled = NO;
+    _btnConfirm.backgroundColor = [UIColor blackColor];
+    _btnConfirm.alpha = 0.5f;
+    
 }
 
 - (void)didReceiveMemoryWarning {
