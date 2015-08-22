@@ -7,28 +7,37 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="NibChoice">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <rect key="frame" x="0.0" y="0.0" width="150" height="35"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="拉亞漢堡" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jqB-P7-Zzb" userLabel="labTitle">
-                    <rect key="frame" x="8" y="8" width="203" height="21"/>
-                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
-                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="02-2631-3204" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9gu-wQ-dJw" userLabel="labPhoneNumber">
-                    <rect key="frame" x="8" y="29" width="224" height="21"/>
-                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZaV-Df-ja1" userLabel="viewRound">
+                    <rect key="frame" x="5" y="5" width="140" height="25"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="拉亞漢堡" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jqB-P7-Zzb" userLabel="labTitle">
+                    <rect key="frame" x="0.0" y="0.0" width="150" height="35"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
             <color key="backgroundColor" red="0.082352941176470587" green="0.62352941176470589" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="jqB-P7-Zzb" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="6xI-vI-6ZB"/>
+                <constraint firstAttribute="trailing" secondItem="ZaV-Df-ja1" secondAttribute="trailing" constant="5" id="FPF-G9-LV4"/>
+                <constraint firstAttribute="bottom" secondItem="ZaV-Df-ja1" secondAttribute="bottom" constant="5" id="Gh9-El-M1K"/>
+                <constraint firstAttribute="trailing" secondItem="jqB-P7-Zzb" secondAttribute="trailing" id="Qwf-2H-aCG"/>
+                <constraint firstItem="ZaV-Df-ja1" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="h8q-zX-TUG"/>
+                <constraint firstItem="ZaV-Df-ja1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="rAY-pQ-9LE"/>
+                <constraint firstAttribute="bottom" secondItem="jqB-P7-Zzb" secondAttribute="bottom" id="slo-UQ-YdP"/>
+                <constraint firstItem="jqB-P7-Zzb" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ssD-r3-R2f"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
-                <outlet property="labPhoneNumber" destination="9gu-wQ-dJw" id="39t-hc-tDi"/>
                 <outlet property="labTitle" destination="jqB-P7-Zzb" id="xLh-sD-H2J"/>
+                <outlet property="viewRound" destination="ZaV-Df-ja1" id="iyP-xZ-K1C"/>
             </connections>
-            <point key="canvasLocation" x="525" y="464"/>
+            <point key="canvasLocation" x="473.5" y="197.5"/>
         </view>
     </objects>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

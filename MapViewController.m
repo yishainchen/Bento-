@@ -9,9 +9,10 @@
 
 
 #import "LoginViewController.h"
-#import <GoogleMaps/GoogleMaps.h>
+
 #import <AFNetworking/AFNetworking.h>
 #import "MapViewController.h"
+#import "NibChoice.h"
 
 @interface MapViewController ()  <GMSMapViewDelegate,CLLocationManagerDelegate, UITextFieldDelegate>
 {
@@ -41,7 +42,11 @@
     GMSCameraPosition *currentMap = [GMSCameraPosition cameraWithLatitude:mapView.myLocation.coordinate.latitude longitude:mapView.myLocation.coordinate.longitude zoom:6];
     mapView = [GMSMapView mapWithFrame:CGRectZero camera:currentMap];
     mapView.frame = CGRectMake(0, 44, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - 94);
-    mapView.myLocationEnabled = YES;
+    mapView.myLocationEnabled       = YES;
+    mapView.multipleTouchEnabled    = NO;
+    mapView.settings.rotateGestures = NO;
+    mapView.settings.tiltGestures   = NO;
+    mapView.delegate = self;
     
     
     //marker
@@ -64,7 +69,6 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 - (void)viewDidAppear:(BOOL)animated
 {
@@ -84,33 +88,60 @@
     if ([keyPath isEqualToString:@"myLocation"] && [object isKindOfClass:[GMSMapView class]])
     {
         if (isFirstTime == YES) {
-            
             CLLocation *location = [change objectForKey:NSKeyValueChangeNewKey];
             CLLocation *normalLocation = [[CLLocation alloc]initWithLatitude:location.coordinate.latitude longitude:location.coordinate.longitude];
             [mapView animateToCameraPosition:[GMSCameraPosition cameraWithTarget:normalLocation.coordinate zoom:17]];
-            
-            NSLog(@"%f", normalLocation.coordinate.latitude);
-            NSLog(@"%f", normalLocation.coordinate.longitude);
             isFirstTime = NO;
         }
     }
-    
 }
 - (void)marker {
     //set a marker on map
     
+    NibChoice *nibChoice = [[NibChoice alloc]init];
+    nibChoice           = [[[NSBundle mainBundle] loadNibNamed:@"NibChoice" owner:self options:nil]objectAtIndex:0];
+    nibChoice.frame = CGRectMake(0, 0, 150, 35);
+    nibChoice.labTitle.text = @"7-11 臺大店";
+    
     GMSMarker *garbageLocation = [[GMSMarker alloc] init];
-    garbageLocation.position = CLLocationCoordinate2DMake(mapView.myLocation.coordinate.latitude, mapView.myLocation.coordinate.longitude);
-    garbageLocation.title = @"Here";
-    garbageLocation.appearAnimation = kGMSMarkerAnimationPop;
+    garbageLocation.icon = [self imageFromView:nibChoice];
+    garbageLocation.position = CLLocationCoordinate2DMake(25.017340, 121.539752);
+    garbageLocation.title = @"1";
+//    garbageLocation.appearAnimation = kGMSMarkerAnimationPop;
     garbageLocation.map = mapView;
     
 }
-
+-(BOOL) mapView:(GMSMapView *) mapView didTapMarker:(GMSMarker *)marker
+{
+    NibChoice *nibChoice      = [[NibChoice alloc]init];
+    nibChoice                 = [[[NSBundle mainBundle] loadNibNamed:@"NibChoice" owner:self options:nil]objectAtIndex:0];
+    nibChoice.frame           = CGRectMake(0, 0, 150, 35);
+    nibChoice.labTitle.text   = @"7-11 臺大店";
+    nibChoice.backgroundColor = [UIColor redColor];
+    marker.icon = [self imageFromView:nibChoice];
+    
+    
+    _btnConfirm.enabled = YES;
+    _btnConfirm.backgroundColor = _colorGreen;
+    return YES;
+}
 
 - (IBAction)backBtn:(id)sender {
     LoginViewController *loginVC = [self.storyboard instantiateViewControllerWithIdentifier:@"Cell"];
     [self presentViewController:loginVC animated:YES completion:nil];
+}
+
+- (UIImage *)imageFromView:(UIView *) view
+{
+    if ([[UIScreen mainScreen] respondsToSelector:@selector(scale)]) {
+        UIGraphicsBeginImageContextWithOptions(view.frame.size, NO, [[UIScreen mainScreen] scale]);
+    } else {
+        UIGraphicsBeginImageContext(view.frame.size);
+    }
+    [view.layer renderInContext: UIGraphicsGetCurrentContext()];
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return image;
 }
 
 -(void)getdata {

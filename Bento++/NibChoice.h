@@ -10,6 +10,6 @@
 
 @interface NibChoice : UIView
 @property (weak, nonatomic) IBOutlet UILabel *labTitle;
-@property (weak, nonatomic) IBOutlet UILabel *labPhoneNumber;
+@property (weak, nonatomic) IBOutlet UIView *viewRound;
 
 @end

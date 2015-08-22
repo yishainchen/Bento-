@@ -10,5 +10,13 @@
 
 @implementation NibChoice
 
+- (void)awakeFromNib {
+    _viewRound.layer.borderColor = [UIColor yellowColor].CGColor;
+    _viewRound.layer.borderWidth = 2.0f;
+    
+    
+    
+    
+}
 
 @end
