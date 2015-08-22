@@ -322,10 +322,10 @@
             </objects>
             <point key="canvasLocation" x="-47" y="247"/>
         </scene>
-        <!--Result-->
+        <!--WaitResult-->
         <scene sceneID="ILe-nZ-HZs">
             <objects>
-                <viewController title="Result" id="Csi-sq-RIm" sceneMemberID="viewController">
+                <viewController title="WaitResult" id="Csi-sq-RIm" customClass="WaitResultViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="lfN-wm-GhS"/>
                         <viewControllerLayoutGuide type="bottom" id="Qvr-8H-KsN"/>
@@ -359,10 +359,73 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="8ry-IO-d2F"/>
+                    <connections>
+                        <segue destination="aR6-PE-9Wq" kind="modal" id="1uY-Pb-hlH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hTu-BR-f32" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1833" y="247"/>
+        </scene>
+        <!--VoteResult-->
+        <scene sceneID="rL3-xB-vfH">
+            <objects>
+                <viewController title="VoteResult" id="aR6-PE-9Wq" customClass="VoteResultViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6FA-81-hs1"/>
+                        <viewControllerLayoutGuide type="bottom" id="vLM-xy-dDU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="l8g-yA-o1g">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg2" translatesAutoresizingMaskIntoConstraints="NO" id="WC0-Zo-yXa">
+                                <rect key="frame" x="-5" y="-4" width="330" height="636"/>
+                                <color key="backgroundColor" red="0.0" green="0.67135598780000005" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3vO-fP-gfa">
+                                <rect key="frame" x="0.0" y="188" width="320" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="丹丹漢堡" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QxU-Hp-QUo">
+                                <rect key="frame" x="0.0" y="203" width="320" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="開票結果" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3e2-7r-u0Q">
+                                <rect key="frame" x="0.0" y="169" width="320" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="美好的午餐，Bento幫您完成" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tF6-qU-ddS">
+                                <rect key="frame" x="0.0" y="456" width="320" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4t6-Gm-vUH">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <color key="backgroundColor" red="0.43529411764705883" green="0.78823529411764703" blue="0.41568627450980394" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="返回">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="kGr-sL-qen"/>
+                    <connections>
+                        <segue destination="avp-8R-qdA" kind="push" id="KUo-w2-iuX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I5E-42-xfi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2278" y="247"/>
         </scene>
     </scenes>
     <resources>
@@ -375,4 +438,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="KUo-w2-iuX"/>
+    </inferredMetricsTieBreakers>
 </document>
