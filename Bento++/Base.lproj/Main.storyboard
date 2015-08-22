@@ -20,48 +20,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg1" translatesAutoresizingMaskIntoConstraints="NO" id="Ke2-UP-kXo">
                                 <rect key="frame" x="0.0" y="0.0" width="326" height="568"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="選擇價格區間" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q4F-ff-phD">
-                                <rect key="frame" x="116" y="112" width="125" height="33"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WN1-h7-3RZ">
-                                <rect key="frame" x="70" y="116" width="24" height="25"/>
-                                <state key="normal" image="money">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KOf-cM-0ro">
-                                <rect key="frame" x="16" y="421" width="90" height="49"/>
-                                <color key="backgroundColor" red="0.5" green="0.81056053319999999" blue="0.49188701930000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Cheap">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="cheapBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7h6-K6-cWH"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xbt-jl-9hK">
-                                <rect key="frame" x="116" y="421" width="89" height="49"/>
-                                <color key="backgroundColor" red="0.5" green="0.81056053319999999" blue="0.49188701930000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Medium">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="mediumBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8ut-eR-dGd"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u6T-kh-wYD">
-                                <rect key="frame" x="214" y="421" width="89" height="49"/>
-                                <color key="backgroundColor" red="0.5" green="0.81056053319999999" blue="0.49188701930000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Costly">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="costlyBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XBr-9u-N9w"/>
-                                </connections>
-                            </button>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ryu-Ka-pJV">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                             </navigationBar>
@@ -80,13 +38,102 @@
                                     <action selector="backBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KrQ-l0-HHr"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KOf-cM-0ro">
+                                <rect key="frame" x="118" y="199" width="90" height="49"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <state key="normal" title="便當揪團">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="cheapBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7h6-K6-cWH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Onb-4t-pVJ">
+                                <rect key="frame" x="118" y="261" width="90" height="38"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <state key="normal" title="餐廳投票">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="XfZ-1r-Wyc" kind="modal" id="wzb-8c-7wK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WN1-h7-3RZ">
+                                <rect key="frame" x="80" y="211" width="24" height="25"/>
+                                <state key="normal" image="money">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9qh-sp-uMP">
+                                <rect key="frame" x="80" y="267" width="24" height="25"/>
+                                <state key="normal" image="money">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="421" y="292"/>
+            <point key="canvasLocation" x="443" y="292"/>
+        </scene>
+        <!--Add Search View Controller-->
+        <scene sceneID="N3T-WP-abG">
+            <objects>
+                <viewController id="XfZ-1r-Wyc" customClass="AddSearchViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mBl-rO-STe"/>
+                        <viewControllerLayoutGuide type="bottom" id="yVg-sj-M9g"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5pR-Cr-cLg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg1" translatesAutoresizingMaskIntoConstraints="NO" id="yBM-wq-zYJ">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QCQ-M9-04x">
+                                <rect key="frame" x="-8" y="42" width="335" height="473"/>
+                                <connections>
+                                    <segue destination="OL0-f0-dJt" kind="embed" id="yTa-or-sLF"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zBB-k8-VWv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="443" y="924"/>
+        </scene>
+        <!--Vote Table View Controller-->
+        <scene sceneID="5PC-uo-CzD">
+            <objects>
+                <tableViewController id="OL0-f0-dJt" customClass="VoteTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="VwK-W9-Xvp">
+                        <rect key="frame" x="0.0" y="0.0" width="335" height="473"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Xt7-8C-Rul">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Xt7-8C-Rul" id="6ZE-bX-QcV">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="OL0-f0-dJt" id="ejM-ts-zba"/>
+                            <outlet property="delegate" destination="OL0-f0-dJt" id="qxa-r6-QKk"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gRV-yF-v1D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="845.5" y="876.5"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="d7n-E9-DZU">
@@ -132,7 +179,62 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dzr-oP-y18" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="787" y="292"/>
+            <point key="canvasLocation" x="863" y="292"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="TRH-jX-P27">
+            <objects>
+                <viewController id="Dta-xa-fm0" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KYp-kA-UtR"/>
+                        <viewControllerLayoutGuide type="bottom" id="Mk8-ng-Ix2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="97O-QV-wSl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg1" translatesAutoresizingMaskIntoConstraints="NO" id="1Jv-io-yVv">
+                                <rect key="frame" x="0.0" y="0.0" width="325" height="568"/>
+                            </imageView>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3b5-vZ-bHP">
+                                <rect key="frame" x="0.0" y="42" width="320" height="463"/>
+                                <connections>
+                                    <segue destination="m0i-Sf-3Mn" kind="embed" id="hJp-9X-06X"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ABK-bL-yiC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1225" y="292"/>
+        </scene>
+        <!--Host Vote View Controller-->
+        <scene sceneID="qWm-Z4-6e8">
+            <objects>
+                <tableViewController id="m0i-Sf-3Mn" customClass="HostVoteViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="K8Y-g0-AST">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="463"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="tAb-hd-N7t">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tAb-hd-N7t" id="FPA-Y6-09K">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="m0i-Sf-3Mn" id="FHC-nv-M59"/>
+                            <outlet property="delegate" destination="m0i-Sf-3Mn" id="Ilp-Rd-1xv"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rlu-9d-cOD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1626" y="239.5"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="hfo-dU-CZw">
@@ -201,7 +303,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="951-P4-lce" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1" y="292"/>
+            <point key="canvasLocation" x="83" y="292"/>
         </scene>
     </scenes>
     <resources>

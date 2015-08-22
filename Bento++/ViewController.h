@@ -10,8 +10,7 @@
 
 @interface ViewController : UIViewController
 - (IBAction)cheapBtn:(id)sender;
-- (IBAction)mediumBtn:(id)sender;
-- (IBAction)costlyBtn:(id)sender;
+
 
 
 @end

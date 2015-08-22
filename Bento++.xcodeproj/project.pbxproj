@@ -10,6 +10,9 @@
 		6336B03733005CD843A24ABC /* libPods-Bento++.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F26B0C308BE163206B84A4E /* libPods-Bento++.a */; };
 		849AB3631B87480C0000C6AF /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 849AB3621B87480C0000C6AF /* LoginViewController.m */; };
 		849AB3661B8832A90000C6AF /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 849AB3651B8832A90000C6AF /* MapViewController.m */; };
+		849AB3691B884F1D0000C6AF /* AddSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 849AB3681B884F1D0000C6AF /* AddSearchViewController.m */; };
+		849AB36C1B88CA3D0000C6AF /* VoteTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 849AB36B1B88CA3D0000C6AF /* VoteTableViewController.m */; };
+		849AB3701B88CD3E0000C6AF /* HostVoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 849AB36F1B88CD3E0000C6AF /* HostVoteViewController.m */; };
 		84BD07C61B870A8000AA8FC3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BD07C51B870A8000AA8FC3 /* main.m */; };
 		84BD07C91B870A8000AA8FC3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BD07C81B870A8000AA8FC3 /* AppDelegate.m */; };
 		84BD07CC1B870A8000AA8FC3 /* Bento__.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84BD07CA1B870A8000AA8FC3 /* Bento__.xcdatamodeld */; };
@@ -23,10 +26,16 @@
 		3E1299FB338D68C93E1D8631 /* Pods-Bento++.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bento++.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bento++/Pods-Bento++.release.xcconfig"; sourceTree = "<group>"; };
 		4F26B0C308BE163206B84A4E /* libPods-Bento++.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Bento++.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		750335FF970CE08A07787ABF /* Pods-Bento++.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bento++.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bento++/Pods-Bento++.debug.xcconfig"; sourceTree = "<group>"; };
-		849AB3611B87480C0000C6AF /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
-		849AB3621B87480C0000C6AF /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
-		849AB3641B8832A90000C6AF /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
-		849AB3651B8832A90000C6AF /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		849AB3611B87480C0000C6AF /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = ../LoginViewController.h; sourceTree = "<group>"; };
+		849AB3621B87480C0000C6AF /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = ../LoginViewController.m; sourceTree = "<group>"; };
+		849AB3641B8832A90000C6AF /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapViewController.h; path = ../MapViewController.h; sourceTree = "<group>"; };
+		849AB3651B8832A90000C6AF /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapViewController.m; path = ../MapViewController.m; sourceTree = "<group>"; };
+		849AB3671B884F1D0000C6AF /* AddSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddSearchViewController.h; sourceTree = "<group>"; };
+		849AB3681B884F1D0000C6AF /* AddSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddSearchViewController.m; sourceTree = "<group>"; };
+		849AB36A1B88CA3D0000C6AF /* VoteTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoteTableViewController.h; sourceTree = "<group>"; };
+		849AB36B1B88CA3D0000C6AF /* VoteTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VoteTableViewController.m; sourceTree = "<group>"; };
+		849AB36E1B88CD3E0000C6AF /* HostVoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HostVoteViewController.h; sourceTree = "<group>"; };
+		849AB36F1B88CD3E0000C6AF /* HostVoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HostVoteViewController.m; sourceTree = "<group>"; };
 		84BD07C01B870A8000AA8FC3 /* Bento++.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bento++.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84BD07C41B870A8000AA8FC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84BD07C51B870A8000AA8FC3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -63,13 +72,23 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		849AB36D1B88CAAF0000C6AF /* Vote */ = {
+			isa = PBXGroup;
+			children = (
+				849AB36E1B88CD3E0000C6AF /* HostVoteViewController.h */,
+				849AB36F1B88CD3E0000C6AF /* HostVoteViewController.m */,
+				849AB36A1B88CA3D0000C6AF /* VoteTableViewController.h */,
+				849AB36B1B88CA3D0000C6AF /* VoteTableViewController.m */,
+				849AB3671B884F1D0000C6AF /* AddSearchViewController.h */,
+				849AB3681B884F1D0000C6AF /* AddSearchViewController.m */,
+			);
+			name = Vote;
+			sourceTree = "<group>";
+		};
 		84BD07B71B870A8000AA8FC3 = {
 			isa = PBXGroup;
 			children = (
-				849AB3641B8832A90000C6AF /* MapViewController.h */,
-				849AB3651B8832A90000C6AF /* MapViewController.m */,
-				849AB3611B87480C0000C6AF /* LoginViewController.h */,
-				849AB3621B87480C0000C6AF /* LoginViewController.m */,
+				849AB36D1B88CAAF0000C6AF /* Vote */,
 				84BD07C21B870A8000AA8FC3 /* Bento++ */,
 				84BD07DF1B870A8100AA8FC3 /* Bento++Tests */,
 				84BD07C11B870A8000AA8FC3 /* Products */,
@@ -91,6 +110,10 @@
 			children = (
 				84BD07C71B870A8000AA8FC3 /* AppDelegate.h */,
 				84BD07C81B870A8000AA8FC3 /* AppDelegate.m */,
+				849AB3611B87480C0000C6AF /* LoginViewController.h */,
+				849AB3621B87480C0000C6AF /* LoginViewController.m */,
+				849AB3641B8832A90000C6AF /* MapViewController.h */,
+				849AB3651B8832A90000C6AF /* MapViewController.m */,
 				84BD07CD1B870A8000AA8FC3 /* ViewController.h */,
 				84BD07CE1B870A8000AA8FC3 /* ViewController.m */,
 				84BD07D01B870A8000AA8FC3 /* Main.storyboard */,
@@ -242,11 +265,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				84BD07C91B870A8000AA8FC3 /* AppDelegate.m in Sources */,
+				849AB36C1B88CA3D0000C6AF /* VoteTableViewController.m in Sources */,
 				84BD07C61B870A8000AA8FC3 /* main.m in Sources */,
 				84BD07CF1B870A8000AA8FC3 /* ViewController.m in Sources */,
+				849AB3691B884F1D0000C6AF /* AddSearchViewController.m in Sources */,
 				849AB3661B8832A90000C6AF /* MapViewController.m in Sources */,
 				84BD07CC1B870A8000AA8FC3 /* Bento__.xcdatamodeld in Sources */,
 				849AB3631B87480C0000C6AF /* LoginViewController.m in Sources */,
+				849AB3701B88CD3E0000C6AF /* HostVoteViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
