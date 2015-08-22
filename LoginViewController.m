@@ -46,7 +46,7 @@
             // Handle cancellations
         } else {
             if ([result.grantedPermissions containsObject:@"email"]) {
-
+                
             }
         }
     }];

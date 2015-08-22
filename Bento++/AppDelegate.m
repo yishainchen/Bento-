@@ -10,7 +10,7 @@
 #import <Parse/Parse.h>
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
-
+#import <GoogleMaps/GoogleMaps.h>
 @interface AppDelegate ()
 
 @end
@@ -19,6 +19,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [GMSServices provideAPIKey:@"AIzaSyD435B_-bTSWewlfdGzSlzUxPE_XpR-QvU"];
     [Parse setApplicationId:@"0hjT2YyolzZYUWAKtVzkUUZLt1xaB80po8XRucVR"
                   clientKey:@"SstFNe66mV4Y60WSf9DMWM97hS8M2McYropCggOm"];
     // Override point for customization after application launch.

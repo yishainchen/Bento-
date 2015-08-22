@@ -23,9 +23,6 @@
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg_launch" translatesAutoresizingMaskIntoConstraints="NO" id="Mxu-nu-i5E">
-                    <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
-                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
@@ -41,7 +38,4 @@
             <point key="canvasLocation" x="548" y="455"/>
         </view>
     </objects>
-    <resources>
-        <image name="bg_launch" width="142" height="254"/>
-    </resources>
 </document>

@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="avp-8R-qdA">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,17 +17,68 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg1" translatesAutoresizingMaskIntoConstraints="NO" id="Ke2-UP-kXo">
+                                <rect key="frame" x="0.0" y="0.0" width="326" height="568"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="選擇價格區間" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q4F-ff-phD">
-                                <rect key="frame" x="108" y="344" width="125" height="33"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <rect key="frame" x="116" y="112" width="125" height="33"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WN1-h7-3RZ">
-                                <rect key="frame" x="69" y="347" width="24" height="25"/>
+                                <rect key="frame" x="70" y="116" width="24" height="25"/>
                                 <state key="normal" image="money">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KOf-cM-0ro">
+                                <rect key="frame" x="16" y="421" width="90" height="49"/>
+                                <color key="backgroundColor" red="0.5" green="0.81056053319999999" blue="0.49188701930000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Cheap">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="cheapBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7h6-K6-cWH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xbt-jl-9hK">
+                                <rect key="frame" x="116" y="421" width="89" height="49"/>
+                                <color key="backgroundColor" red="0.5" green="0.81056053319999999" blue="0.49188701930000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Medium">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="mediumBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8ut-eR-dGd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u6T-kh-wYD">
+                                <rect key="frame" x="214" y="421" width="89" height="49"/>
+                                <color key="backgroundColor" red="0.5" green="0.81056053319999999" blue="0.49188701930000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Costly">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="costlyBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XBr-9u-N9w"/>
+                                </connections>
+                            </button>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ryu-Ka-pJV">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bento " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nSX-4b-m50">
+                                <rect key="frame" x="126" y="7" width="68" height="37"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <color key="textColor" red="0.0" green="0.67135598780000005" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w3v-Lg-Gvs">
+                                <rect key="frame" x="16" y="11" width="49" height="30"/>
+                                <state key="normal" title="&lt; Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KrQ-l0-HHr"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -36,10 +88,56 @@
             </objects>
             <point key="canvasLocation" x="421" y="292"/>
         </scene>
+        <!--Map View Controller-->
+        <scene sceneID="d7n-E9-DZU">
+            <objects>
+                <viewController storyboardIdentifier="map" id="ztQ-Re-ffW" customClass="MapViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mfB-4r-OJV"/>
+                        <viewControllerLayoutGuide type="bottom" id="l7a-xy-Ve7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kc3-sc-AGV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OZc-sc-yGB">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bento " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1HH-bt-TL6">
+                                <rect key="frame" x="126" y="9" width="68" height="37"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <color key="textColor" red="0.0" green="0.67135598780000005" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PEk-Wl-pEe">
+                                <rect key="frame" x="16" y="10" width="49" height="30"/>
+                                <state key="normal" title="&lt; Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backBtn:" destination="ztQ-Re-ffW" eventType="touchUpInside" id="JNH-Ig-D2x"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kiq-q3-aNC">
+                                <rect key="frame" x="0.0" y="518" width="320" height="50"/>
+                                <color key="backgroundColor" red="0.5" green="0.81056053319999999" blue="0.49188701930000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="確認">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dzr-oP-y18" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="787" y="292"/>
+        </scene>
         <!--Login View Controller-->
         <scene sceneID="hfo-dU-CZw">
             <objects>
-                <viewController id="avp-8R-qdA" customClass="LoginViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="VC" id="avp-8R-qdA" customClass="LoginViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="I8t-dO-fMt"/>
                         <viewControllerLayoutGuide type="bottom" id="YB2-12-2pc"/>
@@ -48,23 +146,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bento " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sEn-cm-QXj">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg2" translatesAutoresizingMaskIntoConstraints="NO" id="aq4-iX-YKn">
+                                <rect key="frame" x="-5" y="-4" width="330" height="636"/>
+                                <color key="backgroundColor" red="0.0" green="0.67135598776223782" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bento " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sEn-cm-QXj">
                                 <rect key="frame" x="95" y="132" width="131" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="131" id="Hie-4w-BsP"/>
+                                    <constraint firstAttribute="height" constant="66" id="a2v-d0-EsB"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="45"/>
                                 <color key="textColor" red="0.0" green="0.67135598776223782" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="自己的便當自己訂" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bvT-hm-zaa">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="自己的便當自己訂" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bvT-hm-zaa">
                                 <rect key="frame" x="81" y="184" width="158" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="158" id="H7K-cR-T2Y"/>
+                                    <constraint firstAttribute="height" constant="36" id="f5q-ud-SuB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4uU-lD-KJg">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4uU-lD-KJg">
                                 <rect key="frame" x="37" y="457" width="246" height="46"/>
                                 <color key="backgroundColor" red="0.15410047769999999" green="0.41306763889999998" blue="0.69063264130000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="46" id="IrF-mF-1Al"/>
+                                    <constraint firstAttribute="width" constant="246" id="UwC-DM-0hO"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="46" id="vTd-CU-b4a"/>
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Facebook Login"/>
@@ -74,6 +186,17 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bvT-hm-zaa" firstAttribute="leading" secondItem="9fS-fz-7kf" secondAttribute="leadingMargin" constant="65" id="1Ro-La-c8s"/>
+                            <constraint firstAttribute="trailing" secondItem="4uU-lD-KJg" secondAttribute="trailing" constant="37" id="49Z-S2-I0b"/>
+                            <constraint firstItem="sEn-cm-QXj" firstAttribute="leading" secondItem="9fS-fz-7kf" secondAttribute="leadingMargin" constant="79" id="AHR-iL-aK5"/>
+                            <constraint firstItem="YB2-12-2pc" firstAttribute="top" secondItem="4uU-lD-KJg" secondAttribute="bottom" constant="65" id="Ase-kC-OwO"/>
+                            <constraint firstItem="bvT-hm-zaa" firstAttribute="top" secondItem="sEn-cm-QXj" secondAttribute="bottom" constant="-14" id="TU2-jh-L5h"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bvT-hm-zaa" secondAttribute="trailing" constant="65" id="gwd-2a-jhp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sEn-cm-QXj" secondAttribute="trailing" constant="78" id="jhB-Rr-7a1"/>
+                            <constraint firstItem="sEn-cm-QXj" firstAttribute="top" secondItem="I8t-dO-fMt" secondAttribute="bottom" constant="112" id="kEc-KS-UAO"/>
+                            <constraint firstItem="4uU-lD-KJg" firstAttribute="leading" secondItem="9fS-fz-7kf" secondAttribute="leading" constant="37" id="w6X-mo-LjS"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="951-P4-lce" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -82,6 +205,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="bg1" width="320" height="568"/>
+        <image name="bg2" width="320" height="568"/>
         <image name="money" width="128" height="128"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

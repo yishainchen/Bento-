@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5E7BC10E4404D1C60AAE0A93"
+               BlueprintIdentifier = "83EC1E25FF7E2ED3902C49AE"
                BuildableName = "libPods-Bento++-FBSDKCoreKit.a"
                BlueprintName = "Pods-Bento++-FBSDKCoreKit"
                ReferencedContainer = "container:Pods.xcodeproj">

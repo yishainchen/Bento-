@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "003AA10FD9DEB139906E92A7"
+               BlueprintIdentifier = "9E671AEAD2DD8D8D918B16B4"
                BuildableName = "libPods-Bento++-SVProgressHUD.a"
                BlueprintName = "Pods-Bento++-SVProgressHUD"
                ReferencedContainer = "container:Pods.xcodeproj">
