@@ -25,11 +25,22 @@
 
 
 @property UIColor *colorGreen;
+@property NSMutableArray *arrChoice;
 @end
 
 @implementation MapViewController
 
 - (void)viewDidLoad {
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     [super viewDidLoad];
     [[self navigationController] setNavigationBarHidden:YES animated:YES];
     [self getdata];
