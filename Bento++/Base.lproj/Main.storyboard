@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="avp-8R-qdA">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -252,53 +251,29 @@
                                 <rect key="frame" x="-5" y="-4" width="330" height="636"/>
                                 <color key="backgroundColor" red="0.0" green="0.67135598776223782" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bento " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sEn-cm-QXj">
-                                <rect key="frame" x="95" y="132" width="131" height="66"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="131" id="Hie-4w-BsP"/>
-                                    <constraint firstAttribute="height" constant="66" id="a2v-d0-EsB"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bento " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sEn-cm-QXj">
+                                <rect key="frame" x="0.0" y="132" width="320" height="66"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="45"/>
                                 <color key="textColor" red="0.0" green="0.67135598776223782" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="自己的便當自己訂" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bvT-hm-zaa">
-                                <rect key="frame" x="81" y="184" width="158" height="36"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="158" id="H7K-cR-T2Y"/>
-                                    <constraint firstAttribute="height" constant="36" id="f5q-ud-SuB"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4uU-lD-KJg">
-                                <rect key="frame" x="37" y="457" width="246" height="46"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4uU-lD-KJg">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
                                 <color key="backgroundColor" red="0.15410047769999999" green="0.41306763889999998" blue="0.69063264130000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="46" id="IrF-mF-1Al"/>
-                                    <constraint firstAttribute="width" constant="246" id="UwC-DM-0hO"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="46" id="vTd-CU-b4a"/>
-                                </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Facebook Login"/>
                                 <connections>
                                     <action selector="fbLoginButtonDidPressed:" destination="avp-8R-qdA" eventType="touchUpInside" id="O6t-YA-6OJ"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="自己的便當自己訂" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bvT-hm-zaa">
+                                <rect key="frame" x="0.0" y="188" width="320" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="bvT-hm-zaa" firstAttribute="leading" secondItem="9fS-fz-7kf" secondAttribute="leadingMargin" constant="65" id="1Ro-La-c8s"/>
-                            <constraint firstAttribute="trailing" secondItem="4uU-lD-KJg" secondAttribute="trailing" constant="37" id="49Z-S2-I0b"/>
-                            <constraint firstItem="sEn-cm-QXj" firstAttribute="leading" secondItem="9fS-fz-7kf" secondAttribute="leadingMargin" constant="79" id="AHR-iL-aK5"/>
-                            <constraint firstItem="YB2-12-2pc" firstAttribute="top" secondItem="4uU-lD-KJg" secondAttribute="bottom" constant="65" id="Ase-kC-OwO"/>
-                            <constraint firstItem="bvT-hm-zaa" firstAttribute="top" secondItem="sEn-cm-QXj" secondAttribute="bottom" constant="-14" id="TU2-jh-L5h"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="bvT-hm-zaa" secondAttribute="trailing" constant="65" id="gwd-2a-jhp"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="sEn-cm-QXj" secondAttribute="trailing" constant="78" id="jhB-Rr-7a1"/>
-                            <constraint firstItem="sEn-cm-QXj" firstAttribute="top" secondItem="I8t-dO-fMt" secondAttribute="bottom" constant="112" id="kEc-KS-UAO"/>
-                            <constraint firstItem="4uU-lD-KJg" firstAttribute="leading" secondItem="9fS-fz-7kf" secondAttribute="leading" constant="37" id="w6X-mo-LjS"/>
-                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="951-P4-lce" userLabel="First Responder" sceneMemberID="firstResponder"/>
