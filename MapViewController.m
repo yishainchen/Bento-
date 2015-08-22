@@ -123,6 +123,7 @@
     
     _btnConfirm.enabled = YES;
     _btnConfirm.backgroundColor = _colorGreen;
+    _btnConfirm.alpha = 1.0f;
     return YES;
 }
 
