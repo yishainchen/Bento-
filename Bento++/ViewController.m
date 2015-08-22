@@ -18,12 +18,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+//       [[self navigationController] setNavigationBarHidden:NO animated:YES];
     //    PFObject *testObject = [PFObject objectWithClassName:@"TestObject"];
 //    testObject[@"foo"] = @"bar";
 //    [testObject saveInBackground];
     // Do any additional setup after loading the view, typically from a nib.
 }
+
+-(void)viewWillAppear:(BOOL)animated {
+    _viewBadge.layer.cornerRadius = _viewBadge.frame.size.width / 2;
+    
+}
+
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

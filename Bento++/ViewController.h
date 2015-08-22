@@ -11,6 +11,7 @@
 @interface ViewController : UIViewController
 - (IBAction)cheapBtn:(id)sender;
 
+@property (weak, nonatomic) IBOutlet UIView *viewBadge;
 
 
 @end

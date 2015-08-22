@@ -30,6 +30,11 @@
     [FBSDKProfile enableUpdatesOnAccessTokenChange:YES];
     [FBSDKProfile currentProfile];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(fbTokenChangeNoti:) name:FBSDKAccessTokenDidChangeNotification object:nil];
+    
+    
+    
+    [[self navigationController] setNavigationBarHidden:YES animated:YES];
+ 
 }
 
 - (IBAction)fbLoginButtonDidPressed:(UIButton *)sender {
