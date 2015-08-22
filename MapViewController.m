@@ -30,6 +30,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [[self navigationController] setNavigationBarHidden:YES animated:YES];
     [self getdata];
     isFirstTime = YES;
     locationManager = [[CLLocationManager alloc] init];
@@ -42,6 +43,7 @@
     mapView.frame = CGRectMake(0, 44, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - 94);
     mapView.myLocationEnabled = YES;
     
+    
     //marker
     GMSMarker *marker = [[GMSMarker alloc] init];
     marker.position = currentMap.target;
@@ -51,8 +53,8 @@
     [self.view addSubview:mapView];
     [self marker];
     
-    //button
     
+    //button
     _colorGreen = [UIColor colorWithRed:0.5f green:0.810561f blue:0.491887f alpha:1.0f];
     _btnConfirm.enabled = NO;
     _btnConfirm.backgroundColor = [UIColor blackColor];
@@ -106,6 +108,10 @@
 }
 
 
+- (IBAction)backBtn:(id)sender {
+    LoginViewController *loginVC = [self.storyboard instantiateViewControllerWithIdentifier:@"Cell"];
+    [self presentViewController:loginVC animated:YES completion:nil];
+}
 
 -(void)getdata {
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
@@ -124,10 +130,4 @@
              NSLog(@"failure: %@", error);
          }];
 }
-
-- (IBAction)backBtn:(id)sender {
-    LoginViewController *loginVC = [self.storyboard instantiateViewControllerWithIdentifier:@"Cell"];
-    [self presentViewController:loginVC animated:YES completion:nil];
-}
-
 @end
