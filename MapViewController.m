@@ -32,15 +32,6 @@
 
 - (void)viewDidLoad {
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
     [super viewDidLoad];
     [[self navigationController] setNavigationBarHidden:YES animated:YES];
     [self getdata];
@@ -112,7 +103,7 @@
     NibChoice *nibChoice = [[NibChoice alloc]init];
     nibChoice           = [[[NSBundle mainBundle] loadNibNamed:@"NibChoice" owner:self options:nil]objectAtIndex:0];
     nibChoice.frame = CGRectMake(0, 0, 150, 35);
-    nibChoice.labTitle.text = @"7-11 臺大店";
+    nibChoice.labTitle.text = @"丹丹漢堡";
     
     GMSMarker *garbageLocation = [[GMSMarker alloc] init];
     garbageLocation.icon = [self imageFromView:nibChoice];
@@ -127,7 +118,7 @@
     NibChoice *nibChoice      = [[NibChoice alloc]init];
     nibChoice                 = [[[NSBundle mainBundle] loadNibNamed:@"NibChoice" owner:self options:nil]objectAtIndex:0];
     nibChoice.frame           = CGRectMake(0, 0, 150, 35);
-    nibChoice.labTitle.text   = @"7-11 臺大店";
+    nibChoice.labTitle.text   = @"丹丹漢堡";
     nibChoice.backgroundColor = [UIColor redColor];
     marker.icon = [self imageFromView:nibChoice];
     

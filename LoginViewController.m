@@ -56,8 +56,8 @@
 
 -(void)fbTokenChangeNoti:(NSNotification*)noti {
     if ([FBSDKAccessToken currentAccessToken]) {
-        ViewController *VC = [self.storyboard instantiateViewControllerWithIdentifier:@"Cell"];
-        [self presentViewController:VC animated:YES completion:nil];
+//        ViewController *VC = [self.storyboard instantiateViewControllerWithIdentifier:@"Cell"];
+        [self performSegueWithIdentifier:@"Cell" sender:nil];
     }
 }
 - (void)didReceiveMemoryWarning {
